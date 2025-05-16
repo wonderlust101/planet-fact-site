@@ -1,0 +1,95 @@
+.planet-image {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 16rem;
+  margin: 1.5rem 0;
+
+  @include breakpoint(small) {
+    grid-column: 1/-1;
+    height: 26.375rem;
+  }
+
+  @include breakpoint(medium) {
+    grid-column: 1;
+    grid-row: 1/-1;
+    height: 100%;
+    width: 41.63094rem;
+  }
+
+  &--mercury {
+    width: 6.9375rem;
+
+    @include breakpoint(small) {width: 11.5rem;}
+    @include breakpoint(medium) {width: 18.125rem;}
+  }
+
+  &--venus {
+    width: 9.625rem;
+
+    @include breakpoint(small) {width: 15.8125rem;}
+    @include breakpoint(medium) {width: 25rem;}
+  }
+
+  &--earth {
+    width: 10.8125rem;
+
+    @include breakpoint(small) {width: 17.8125rem;}
+    @include breakpoint(medium) {width: 28.125rem;}
+  }
+
+  &--mars {
+    width: 8.0625rem;
+
+    @include breakpoint(small) {width: 13.3125rem;}
+    @include breakpoint(medium) {width: 21rem;}
+  }
+
+  &--jupiter {
+    width: 14rem;
+
+    @include breakpoint(small) {width: 23.0625rem;}
+    @include breakpoint(medium) {width: 36.375rem;}
+  }
+
+  &--saturn {
+    width: 16rem;
+
+    @include breakpoint(small) {width: 26.375rem;}
+    @include breakpoint(medium) {width: 41.63094rem;}
+  }
+
+  &--uranus {
+    width: 11rem;
+
+    @include breakpoint(small) {width: 18.125rem;}
+    @include breakpoint(medium) {width: 28.625rem;}
+  }
+
+  &--neptune {
+    width: 10.8125remrem;
+
+    @include breakpoint(small) {width: 17.8125rem;}
+    @include breakpoint(medium) {width: 28.125rem;}
+  }
+
+  &__geology-image {
+    position: absolute;
+    width: 4rem;
+    left: 50%;
+    top: calc(50% + 2rem);
+    transform: translateX(-50%);
+
+    @include breakpoint(small) {
+      width: 6rem;
+      top: calc(50% + 4.5rem);
+    }
+
+    @include breakpoint(medium) {
+      width: 10rem;
+      top: calc(50% + 6.5rem);
+    }
+  }
+}

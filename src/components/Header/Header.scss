@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: $clr-black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+
+  @include breakpoint(small) {
+    display: grid;
+    position: unset;
+    justify-content: unset;
+    justify-items: center;
+    gap: 2.5rem;
+    background-color: transparent;
+  }
+
+  @include breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
+    justify-items: unset;
+    gap: unset;
+  }
+
+  &__logo {
+    font-family: "Antonio", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.06563rem;
+    text-transform: uppercase;
+    color: $clr-white;
+  }
+}

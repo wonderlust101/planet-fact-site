@@ -1,0 +1,93 @@
+@use "../abstract/index" as a;
+
+// Global Styles
+h1, h2, h3, h4, h5, h6, li, button {
+  font-family: "Antonio", sans-serif;
+  color: a.$clr-white;
+}
+
+p, a {
+  font-family: "League Spartan", sans-serif;
+  color: a.$clr-white;
+}
+
+li {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hyperlink {
+  font-weight: 700;
+  text-decoration-line: underline;
+  line-height: 1.5;
+}
+
+// Heading Styles
+.heading-xl {}
+
+.heading-lg {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include a.breakpoint(small) {
+    font-size: 3rem;
+  }
+
+  @include a.breakpoint(medium) {
+    font-size: 5rem;
+  }
+}
+
+.heading-md {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.04688rem;
+  text-transform: uppercase;
+
+  @include a.breakpoint(medium) {
+    font-size: 2.5rem;
+    letter-spacing: -0.09375rem;
+  }
+}
+
+.heading-sm {}
+
+.heading-xs {
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04544rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+// Text Styles
+.text-xl {}
+.text-lg {}
+
+.text-md {
+  font-size: 1rem;
+  line-height: 1.5;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.1rem;
+  }
+}
+
+.text-sm {}
+.text-xs {}
+
+// Font Style
+.italic {font-style: italic;}
+.normal {font-style: normal;}
+
+// Text Transformation
+.uppercase {text-transform: uppercase;}
+.lowercase {text-transform: lowercase;}
+.capitalize {text-transform: capitalize;}

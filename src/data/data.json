@@ -1,0 +1,82 @@
+[
+  {
+    "planet": "Mercury",
+    "description": "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun’s planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "58.6 days",
+    "revolution_time": "87.97 days",
+    "radius_km": "2439.7 km",
+    "average_temperature": "430°C",
+    "color": "rgb(65, 158, 187)"
+  },
+  {
+    "planet": "Venus",
+    "description": "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth’s night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "243 days",
+    "revolution_time": "224.7 days",
+    "radius_km": "6051.8 km",
+    "average_temperature": "471°C",
+    "color": "rgb(237, 162, 73)"
+  },
+  {
+    "planet": "Earth",
+    "description": "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth’s surface is land with remaining 70.8% is covered with water. Earth’s distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "0.99 days",
+    "revolution_time": "365.26 days",
+    "radius_km": "6371 km",
+    "average_temperature": "16°C",
+    "color": "rgb(109, 46, 213)"
+  },
+  {
+    "planet": "Mars",
+    "description": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the 'Red Planet'.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "1.03 days",
+    "revolution_time": "1.88 years",
+    "radius_km": "3389.5 km",
+    "average_temperature": "-28°C",
+    "color": "rgb(209, 76, 50)"
+  },
+  {
+    "planet": "Jupiter",
+    "description": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "9.93 hours",
+    "revolution_time": "11.86 years",
+    "radius_km": "69911 km",
+    "average_temperature": "-108°C",
+    "color": "rgb(216, 58, 52)"
+  },
+  {
+    "planet": "Saturn",
+    "description": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "10.8 hours",
+    "revolution_time": "29.46 years",
+    "radius_km": "58232 km",
+    "average_temperature": "-138°C",
+    "color": "rgb(205, 81, 32)"
+  },
+  {
+    "planet": "Uranus",
+    "description": "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus. According to Greek mythology, he was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "17.2 hours",
+    "revolution_time": "84 years",
+    "radius_km": "25362 km",
+    "average_temperature": "-195°C",
+    "color": "rgb(30, 193, 162)"
+  },
+  {
+    "planet": "Neptune",
+    "description": "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.",
+    "source": "https://en.wikipedia.org",
+    "rotation_time": "16.08 hours",
+    "revolution_time": "164.79 years",
+    "radius_km": "24622 km",
+    "average_temperature": "-201°C",
+    "color": "rgb(45, 104, 240)"
+  }
+]

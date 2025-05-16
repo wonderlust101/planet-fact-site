@@ -1,0 +1,13 @@
+@use "../abstract/index" as a;
+
+ul,
+ol {
+  list-style: none;
+}
+
+picture img,
+picture source {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

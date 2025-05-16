@@ -1,0 +1,22 @@
+.app-layout {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  min-height: 100vh;
+  padding: 106px 0 3rem;
+  background: url("/images/background-stars.svg") $clr-black no-repeat center;
+  background-size: cover;
+
+  @include breakpoint(small) {
+    padding: unset;
+  }
+
+  &__content {
+    align-items: flex-start;
+    justify-items: center;
+
+    @include breakpoint(small) {
+      grid-template-rows: 1fr max-content;
+      padding: 2.25rem 0;
+    }
+  }
+}

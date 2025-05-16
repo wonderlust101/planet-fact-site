@@ -1,0 +1,28 @@
+.planet-details {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  text-align: center;
+
+  @include breakpoint(small) {
+    text-align: left;
+    justify-items: flex-start;
+    align-content: center;
+  }
+
+  @include breakpoint(medium) {
+    align-self: flex-end;
+  }
+
+  &__main-content {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__wikipedia-link {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    opacity: 0.5;
+  }
+}

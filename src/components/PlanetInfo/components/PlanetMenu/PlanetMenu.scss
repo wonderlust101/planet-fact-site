@@ -1,0 +1,84 @@
+.planet-menu {
+  &__button-container {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(small) {
+      justify-items: flex-start;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+    border: none;
+    padding: 1.16rem 0;
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12056rem;
+    text-transform: uppercase;
+
+    @include breakpoint(small) {
+      background: $clr-black;
+      border: solid 2px rgba(255, 255, 255, 0.2);
+      width: 100%;
+      padding: 1.25rem 1.75rem;
+      font-size: 1rem;
+    }
+
+    &::before {
+      @include breakpoint(small) {
+        content: attr(data-index);
+        opacity: 0.5;
+      }
+    }
+
+    &:hover:not(.planet-menu__button--active) {
+      @include breakpoint(small) {
+        background: rgb(49, 49, 72);
+        border: solid 2px transparent;
+      }
+    }
+
+    &--active {
+      border-bottom: solid 0.25rem var(--active-color);
+
+      @include breakpoint(small) {
+        background-color: var(--active-color);
+        border-color: transparent;
+      }
+    }
+  }
+
+  &--mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-column: 1 / -1 !important;
+    width: 100%;
+    padding: 0 1.5rem;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+
+    @include breakpoint(small) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @include breakpoint(small) {
+      display: grid;
+      align-content: center;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    @include breakpoint(medium) {
+      align-self: flex-start;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.desktop-navigation {
+  display: none;
+
+  @include breakpoint(small) {
+    display: block;
+  }
+
+  &__nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link {
+    font-weight: 700;
+    line-height: 2.3;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    color: $clr-white;
+  }
+}

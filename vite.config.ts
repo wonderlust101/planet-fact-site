@@ -1,24 +1,31 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import path from "node:path";
+import { fileURLToPath } from "url";
 import svgr from "vite-plugin-svgr";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-    plugins: [react({
-        babel: {
-            plugins: [["babel-plugin-react-compiler"]]
-        }
-    }), svgr()],
-    css    : {
+    plugins: [
+        react({
+            babel: {
+                plugins: [["babel-plugin-react-compiler"]]
+            }
+        }),
+        svgr()
+    ],
+    css: {
         preprocessorOptions: {
             scss: {
-                api           : "modern-compiler",
+                api: "modern-compiler",
                 additionalData: `@use "/src/assets/styles/abstract/_index.scss" as *;`
             }
         }
     },
-    base   : "/planets-fact-site/",
+    base: "/planets-fact-site/",
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src")
